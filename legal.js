@@ -7,7 +7,7 @@ document.querySelectorAll('[data-publisher-address]').forEach((node) => {
   node.textContent = config.address || 'Publisher address required before public release';
 });
 document.querySelectorAll('[data-privacy-email]').forEach((node) => {
-  const email = config.privacyEmail || 'privacy@your-domain.example';
+  const email = config.privacyEmail || 'support.mililabs@gmail.com';
   node.textContent = email;
   if (node.tagName === 'A') {
     const query = node.getAttribute('href')?.split('?')[1];
@@ -15,7 +15,7 @@ document.querySelectorAll('[data-privacy-email]').forEach((node) => {
   }
 });
 document.querySelectorAll('[data-support-email]').forEach((node) => {
-  const email = config.supportEmail || 'support@your-domain.example';
+  const email = config.supportEmail || 'support.mililabs@gmail.com';
   node.textContent = email;
   if (node.tagName === 'A') {
     const query = node.getAttribute('href')?.split('?')[1];
